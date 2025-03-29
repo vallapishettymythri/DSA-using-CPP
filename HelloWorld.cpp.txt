@@ -1,0 +1,16 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() { 
+//Defines the main function, and the int means it returns an integer value(1,2,3-basic numbers)
+
+    cout << "Hello, World!";  //cout is used as printf, To print the output.
+    // << symbol used to send the data as output.
+    
+    return 0; // the program ran successfully, and the program finished without any issues.
+}
