@@ -1,0 +1,16 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std; // To avoid std:: we use Namespace std
+
+
+int main() {   //Main function where int is an integer value 
+    int a,b,c; //Intialising a,b,c as an integer
+    int sum=0; //Intialising sum as 0 as starting point of summing values.
+    cin >> a >> b >> c; //User Inputs as a,b,c. Input-1,2,7
+    sum=a+b+c; //adding a+b+c, eg: 1+2+7=10
+    cout << sum; //prints sum value as 10.
+    return 0; //The code successfully executed without any errors.
+}
