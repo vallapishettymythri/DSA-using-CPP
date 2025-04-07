@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int i; //integer data type
+    long l; //long data type
+    char ch; //character data type
+    float f; //float data type
+    double d; //double data type
+    cin >> i >> l >> ch >> f >> d; //taking user input of the intialised variables.
+    cout << i << '\n';
+    cout << l << '\n';
+    cout << ch << '\n';
+    // '\n' is used to print in new line
+    printf("%.3f\n", f);  // print float with 3 decimal places
+    printf("%.9f\n", d);  // print double with 9 decimal places
+    return 0;
+}
