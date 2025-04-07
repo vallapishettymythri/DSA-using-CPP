@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;  //taking input a and b of integer data type.
+    cin >> a >> b; 
+    for(int i=a;i<=b;i++){  //intialising i=a, i less than b, increment i
+        if(i>=1 && i<=9){  //if i>=1 and i<=9
+            if(i==1) cout<< "one" << endl; //i is same as 1 we print one
+            if(i==2) cout<<"two" << endl; //i is same as 2 we print two
+            if(i==3) cout<<"three" << endl; //i is same as 3 we print three
+            if(i==4) cout << "four" << endl; //i is same as 4 we print four
+            if(i==5)cout << "five" << endl; //i is same as 5 we print five
+            if(i==6)cout << "six" << endl; //i is same as 6 we print siz
+            if(i==7)cout << "seven" << endl; //i is same as 7 we print seven
+            if(i==8)cout << "eight" << endl; //i is same as 8 we print eight
+            if(i==9)cout << "nine" << endl; //i is same as 9 we print nine
+        }
+        else if(i%2==0){ //using modulus to divide the number. If the given number  remainder is zero it is said to be even.
+            cout << "even" << endl;
+        }
+        else
+        cout << "odd" << endl;
+    }
+        //else with remainder without 0 is said to be odd.
+    return 0;
+}
