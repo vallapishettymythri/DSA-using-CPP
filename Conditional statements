@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;  //Intialising num as an integer data type
+    cin >> num; //taking num as input
+
+    if (num == 0) {  //if give input is 0 and matches it prints zero
+        cout << "zero";
+    }
+    else if (num == 1) {  //if give input is 1 and matches it prints one
+        cout << "one";
+    }
+    else if (num == 2) {   //if give input is 2 and matches it prints two
+        cout << "two";
+    }
+    else if (num == 3) {  //if give input is 3 and matches it prints three
+        cout << "three";  
+    }
+    else if (num == 4) {   //if give input is 4 and matches it prints four
+        cout << "four"; 
+    }
+    else if (num == 5) {   //if give input is 0 and matches it prints five
+    cout << "five";
+    }
+    else if (num == 6) {   //if give input is 6 and matches it prints six
+        cout << "six";
+    }
+    else if (num == 7) {  //if give input is 7 and matches it prints seven
+        cout << "seven";
+    }
+    else if (num == 8) {   //if give input is 8 and matches it prints eight
+        cout << "eight";
+    }
+    else if (num == 9) {  //if give input is 9 and matches it prints nine
+        cout << "nine";
+    }
+    else {
+        cout << "Greater than 9";  //if input is greater than 9, we print as "Greater than 9"
+    }
+
+    return 0;
+}
