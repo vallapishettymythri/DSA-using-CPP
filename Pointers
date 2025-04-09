@@ -1,0 +1,24 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a,b; //intialising a and b with integer data type 
+    cin >> a >> b; //taking input a and b
+    int* add=new int; //creating and allocating place for pointer sum
+    int* sub=new int; //creating and allocating place for pointer sub
+    *add=a+b; //adding a and b elemnts into pointer add
+    if(a>b){  //if a is greater than b, we subtract a-b
+        *sub=a-b;
+    }else{
+        *sub=b-a; //if b is greater than a, we subtract b-a
+    }
+    cout << *add << endl; //print output *add
+    cout << *sub << endl; //print output *sub
+      
+    return 0;
+}
