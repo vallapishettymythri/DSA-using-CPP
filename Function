@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int greatest(int a,int b,int c, int d){  //creating a function called greatest
+    int max_val=a; //intialising max_value as a
+    if(b>max_val){ //if b value is greater than max_value(a) 
+        max_val=b; //updating max_value as b.
+    }
+    if(c>max_val){ //if c value is greater than max_value(b)
+        max_val=c; //update max_value as c
+    }
+    if(d>max_val){ //if d value is greater than max_value(d)
+        max_val=d; //update max_value as d
+    }
+    return max_val; //print the maximum value.
+    
+}
+int main() {
+    int a,b,c,d;  //intialising 4 variables a,b,c,d as integer
+    cin >> a >> b >> c >> d; //user input of a,b,c,d
+    int max_value=greatest(a,b,c,d); //intialising max_value as greatest(function) of a,b,c,d
+    cout << max_value; //printing maximum value
+    return 0;
+    }
