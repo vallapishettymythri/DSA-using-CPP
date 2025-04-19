@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;  //intialising n as integer data type
+    cout << "Enter a number: "; //taking user input
+    cin >> n;  
+
+    int i = 1; //intialising i as 1
+    int sum = 0; //intialising sum as 0, starting to add number into it. Eg: 7+0=7 Sum stores 7.
+
+    while (i <= n) {  //Using while to print sum, if i<=n.
+        sum = sum + i; //sum=sum+i adding to sum and storing in sum.
+        i++; //incrementing i
+    }
+
+    cout << "Sum = " << sum << endl; //printing output.
+
+    return 0;
+}
