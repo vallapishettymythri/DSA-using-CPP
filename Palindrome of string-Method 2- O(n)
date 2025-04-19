@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    string s; //intialising s as string
+    cin >> s; //user input s.
+    bool is_palindrome=true; //intialising boolean variable as true.
+    for(int i=0,j=s.length()-1;i<=j;i++,j--)   //using i and j in one for loop.
+    //checking string from start and j from last.
+        if(s[i]!=s[j]){ //comparing i and j if they are not equal false. Equal they move to next letter i++,j--
+            is_palindrome=false;
+            break; //breaking the execution
+        }
+    if(is_palindrome){
+        cout << "YES"; //if it is palindrome print as yes
+    }
+    else{
+        cout << "NO"; //if it is not a palindrome print as no.
+    }
+    return 0;
+}
