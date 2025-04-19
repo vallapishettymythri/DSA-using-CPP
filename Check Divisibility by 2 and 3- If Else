@@ -1,0 +1,21 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n; //intialising n as integer
+    cin >> n; //taking user input
+    if(n%2==0 && n%3==0){ //if n is divided by 2 and the remainder is 0  AND  n is divided by 3 and remainder is 0
+//modulus is used to get remainder
+        cout << "Yes"; //print the output as yes
+    }
+    else{
+cout << "No"; //else print the output as no.
+    }
+        
+    return 0;
+}
