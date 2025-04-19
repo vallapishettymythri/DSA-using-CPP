@@ -1,0 +1,17 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int n;  //intialising n as integer
+    cin >> n;  //taking user input
+    int sum=0; //initialising sum=0, eg: 5+0=5
+    for(int i=1;i<=n;i++){ //i starting from 1 as natural numbers start from 1. 
+        sum+=i; //sum=sum+i;
+    } 
+    cout << sum; //print output as sum.
+    return 0;
+}
