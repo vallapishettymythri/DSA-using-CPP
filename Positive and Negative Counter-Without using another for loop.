@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n; //initialising n as integer datatype
+    cin >> n; //user input as n
+    int arr[n]; //intialising arr as of size n.
+    int count_negative=0; //count of negative as 0
+    int count_positive=0; //count of positive as 0
+    
+    for(int i=0; i<n; i++){
+        cin >> arr[i]; //taking input of the array
+        if(arr[i]>0){ //if array of i is greater than 0 then we increment positive count.
+            count_positive++;
+        }
+        else if(arr[i]<0) //else if arr[i] is less than 0, increment negative count.
+            count_negative++;
+        }
+    cout << count_positive << " " << count_negative; //print postive and negative count of the array.
+    
+    
+    return 0;
+}
