@@ -1,0 +1,17 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;  //initialising n as integer data type
+    cin >> n; //taking user input
+    int sum=0; //initialising sum as 0 (empty)
+    for(int i=1;i<=n;i++){ //starting from 1 as it is natural number
+        sum+=i*i; //sum==sum+i*i to calculate square i*i
+    }
+    cout << sum; //priting output.
+    return 0;
+}
