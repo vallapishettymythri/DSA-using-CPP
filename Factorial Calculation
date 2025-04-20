@@ -1,0 +1,17 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){ 
+    int n; //intialising n as an integer datatype
+    cin >> n; //taking user input
+    int factorial=1; //intialising factorial as 1 as 4*1 is 4 which gives the exact number
+    for(int i=1;i<=n;i++){  //i starts from 1, less than or eqaual to 1.
+        factorial*=i; //factorial=factorial*i
+    }
+    cout << factorial; //print factirial as output
+    return 0;
+}
