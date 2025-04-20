@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;  //intialising n as integer datatype
+    cin >> n; //taking input as n
+    int positive=0; //positive count as 0
+    int negative=0; //negative count as 0
+    int a[n]; //creating an integer array
+    for(int i=0;i<n;i++){ 
+        cin >> a[i]; //to take array as input we use a seperate for loop
+    }
+    for(int i=0;i<n;i++){
+        if(a[i] < 0){ //if a[i] is less than 0 we are increasing negative value count
+            negative++;
+        }else if(a[i] > 0){ //id a[i] is greater than 0 we are increasing positive count value
+            positive++;
+        }
+    }
+        cout << positive << " " << negative; //printing output
+        return 0;
+}
