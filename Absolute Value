@@ -1,0 +1,19 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;  //intialising n as integer datatype
+    cin >> n; //taking input as n
+    int absolute=0; //setting absolute value as 0 to store the other values.
+    if(n<0){  //if n is less than 0
+        absolute=-n; //printing as -n where -(-n) becomes n
+    }else{ 
+        absolute=n; //else print n  
+    }
+    cout << absolute; //print absolute value
+    return 0;
+}
