@@ -1,0 +1,20 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    string s;  //intialising s as string datatype.
+    getline(cin,s); //taking input with spaces we use getline.
+    int count=0; //count as 0 starting point
+    for(int i=0;i<s.length();i++){ //starting from 0 to the length of the string.
+        char c=s[i]; //creating character called c and intialising with s[i] where the character vowels are compared to the each letter in string.
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){ //if c=a or c=e or c=i or c=o or c=u  the c is compared with string letter.
+            count++; //if the c and string[i] is matched we increase the count.
+        }
+    }
+    cout << count; //print the count.
+    return 0;
+}
