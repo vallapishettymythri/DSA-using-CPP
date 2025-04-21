@@ -1,0 +1,16 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    float c; //intialising c as float variable where we are considering as celsius(float is where which takes and gives us the solution in decimal points and even in integer)
+    cin >> c; //taking user input 
+    float F; //intialising f as float variable where we are considering as fahrenheit
+    F=(c*9/5)+32;  //formula to calculate fahrenheit.
+    cout << F; //printing output as F.
+    return 0;
+}
