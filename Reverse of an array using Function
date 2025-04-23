@@ -1,0 +1,36 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//using function
+
+
+void reversearr(int a[],int n){ //void: doesnt return any value
+//creating a function called reversearr and intialising integer array(a[]) and n
+    int start=0,end=n-1; //intialising start with index 0, and end with n-1 index. Eg:4-1=3rd index
+    while(start < end){ //while keeps running as long condition is true we are using while. We can even use for loop instead of while.
+    //for (int start = 0, end = n - 1; start < end; start++, end--) 
+        int temp=a[start]; //taking a temporary array and storing a[start value]
+        a[start]=a[end]; //move the value of a[end] to a[start]
+        a[end]=temp; //move the value stored in temp to a[end]
+        start++; //incrementing start
+        end--; //incrementing end
+        
+    }
+}
+int main() {
+    int n; //intialising n as integer data type
+    cin >> n; //taking n as input
+    int a[n]; //intialising array of size n as an integer data type
+    for(int i=0;i<n;i++){  //taking the input of the array
+        cin >> a[i];
+    }
+    reversearr(a,n); //calling the function created above.
+    for(int i=0;i<n;i++){ //to print output.
+        cout << a[i] <<" ";
+    }
+    return 0;
+}
