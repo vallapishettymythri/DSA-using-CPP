@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//Time complexity of O(n)
+
+int main() {
+    int n; //intialising n as integer data type
+    cin >> n; //taking n as input
+    int a[n]; //intialising array of size n as an integer data type
+    int temp=0; //intialising temp=0 (starting array is empty) as an integer
+    for(int i=0;i<n;i++){ //need to use for loop for taking input of the array
+        cin >> a[i];
+    }
+    for (int i = 0, j = n - 1; i < j; i++, j--) { 
+        //i=0: i starting0 from 0 index
+        //j=n-1: j starting from n-1 Eg:if they are 4 elements in an array, 4-1=3, which means 3rd index.(as array indexing starts from 0 to n-1).
+        //if ith index is smaller than jth index we will swap.
+        temp = a[i]; //store the value a[i] in temp
+        a[i] = a[j];  // Move the value at a[j] into a[i]
+        a[j] = temp;  // Move the value stored in temp (which is a[i]) into a[j] 
+    }
+
+    // Output reversed array
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+    }
+
+    return 0;
+}
