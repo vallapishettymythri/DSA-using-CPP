@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//A 2d vector acts as a matrix containing row and column.
+int main() {
+    int n,q; //intialising n element array and q queries of integer data type.
+    cin >> n >> q; //taking input of n and q.
+    
+    vector<vector<int>>v(n); //creating a double vector of integer type and variable v of size n.
+    for(int i=0;i<n;i++){ //vetor starting from 0 index of 1st array
+        int k; //intialising k as an integer
+        cin >> k; //taking user input as k
+        v[i].resize(k); //resize is used as v[i] has exactly k slots.
+        
+        for(int j=0;j<k;j++){
+            cin >> v[i][j]; //taking input of 2nd array
+        }
+    }
+    for(int i=0;i<q;i++){
+        int x,y; //intialising x,y as integer
+        cin >> x >> y; //taking user input x and y
+        cout << v[x][y] << endl; //x-outer array, y-index of the element present.
+    }
+        return 0;
+}
