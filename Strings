@@ -1,0 +1,21 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    string a,b; //intialising two variables as string data type
+    cin >> a >> b; //taking user input 
+    
+    cout << a.size() << " " << b.size() << endl ; //printing the size of a and b 
+    
+    cout << a+b << endl; //concatenating or combining 2 strings together    
+    char temp=a[0]; //taking a character data type as temp to store a[0] value which is a]
+    a[0]=b[0]; // a[0] is a is equal to b[0] is e 
+    b[0]=temp; //swapping b[0] and temp value, where a becomes e and e becomes a.
+    cout << a << " " << b << endl; //printing a and b both together after the swapping.
+        return 0;
+}
