@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//struct is similar to array but it stores different types of data types.
+
+struct  student{  //creating a structure with the name student
+    int age; //initialising age with intege datatype.
+    string first_name; //intialising first_name with string datatype
+    string last_name; //intilising first name with string datatype
+    int standard; //intialising standard with integer datatype
+};
+int main() {
+    student student1; //creating a new variable using the structure to store the data.
+    cin >> student1.age; //taking input of the student1 age
+    cin >> student1.first_name; //taking input of the first_name of the student1
+    cin >> student1.last_name; //taking input of the last_name of the student1
+    cin >> student1.standard; //taking input of the standard of the student 1
+    
+    cout << student1.age << " " << student1.first_name << " " << student1.last_name << " " << student1.standard;    //printing the output of the student1 age, first_name, last_name and standard
+    return 0;
+}
