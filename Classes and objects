@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+class Student {   //creating a class with the name Student
+public:   //access specifier can set to public or private. So as public it can be accesed.
+    int age; //intialising age as an integer datatype
+    string first_name; //intialising first_name as string data type
+    string last_name; //intialising last_name as string data type
+    int standard; //intialiisng standard as integer datatype
+};
+
+int main() {
+    Student st; //creating an object called st of the student class
+
+    cin >> st.age >> st.first_name >> st.last_name >> st.standard; //taking user input of the data object st.
+
+    cout << st.age << "\n"; //printing output st.age
+    cout << st.last_name << ", " << st.first_name << "\n"; //printing st.last_name and st.first_name
+    cout << st.standard << "\n" << "\n"; //printing st.standard 
+    cout << st.age << "," << st.first_name << "," << st.last_name << "," << st.standard << "\n";  //printing of st.age, st.first_name, st.last_name, st.standard
+
+    return 0;
+}
