@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;  //intialising n as integer datatype
+    cin >> n;  //taking n as an input
+
+    int arr[10000]; // assuming max size won't exceed 10,000; adjust if needed
+    long long total = 0; //use long long to store large sum
+
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];   //read each number into array
+        total += arr[i]; // total=total+arr[i]
+    }
+
+    cout << total << endl; //print total as output
+    return 0;
+}
