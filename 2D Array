@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ROWS = 6; //intialising rows with integer datatype
+    int COLS = 6; //intialising columns with integer datatype
+    int arr[ROWS][COLS]; //array of rows and columns
+
+    // Read 6x6 input
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0; j < COLS; j++) {
+            cin >> arr[i][j];
+        }
+    }
+
+    int maxSum; //intialiisng max sum
+    bool first = true; //considering first as true in boolean type
+
+    // Valid hourglass centers are from (1,1) to (4,4)
+    for (int i = 1; i < ROWS - 1; i++) {
+        for (int j = 1; j < COLS - 1; j++) {
+            int sum =
+                arr[i - 1][j - 1] + arr[i - 1][j] + arr[i - 1][j + 1] +
+                                  arr[i][j] +
+                arr[i + 1][j - 1] + arr[i + 1][j] + arr[i + 1][j + 1];
+
+            if (first) {  //if first is true then
+                maxSum = sum;  //if maxSum=sum intialising first as false
+                first = false;
+            } else if (sum > maxSum) { //if sum > maxsum them maxsum is equal to sum
+                maxSum = sum;
+            }
+        }
+    }
+
+    cout << maxSum << endl;
+    return 0;
+}
