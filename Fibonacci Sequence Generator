@@ -1,0 +1,21 @@
+int main() {
+    int a=0;  //intial number as 0
+    int b=1;  //next number as 1
+    int n;
+    cin >> n; //taking input as n
+    if(n==1){ //if n is equal to 1 then we are print a which is 0
+        cout << a;
+        return 0;
+    }
+    int c;
+    cout << a << ' ' << b << ' '; // printing a and b
+    for(int i=3; i<=n;i++){  //starting from index 3 as i=3, i<=n, i++
+        c=a+b;               //c=a+b adding and printing the c 
+        cout << c << " ";
+        a=b;                 //exchanging the numbers to add till it reaches n
+        b=c;
+    }
+    cout << endl;
+    
+    return 0;
+}
