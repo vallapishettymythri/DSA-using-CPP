@@ -1,0 +1,31 @@
+#include <iostream>
+#include <unordered_map>
+#include <string>
+using namespace std;
+
+//here we will be using hashing- it is technique used to map data  to a fixed-size value called a hash code usually to store or find it fast.
+
+int main() {
+    int n;
+    cin >> n;
+
+    unordered_map<string, int> freq; // stores string and its key values as integer type and named as freq.
+
+    // Read strings into map
+    for (int i = 0; i < n; i++) {
+        string s;
+        cin >> s;
+        freq[s]++; //reading freq of the input string
+    }
+    int q;
+    cin >> q;
+
+    // For each query, print how many times it appears
+    for (int i = 0; i < q; i++) {
+        string query;
+        cin >> query;
+        cout << freq[query] << endl;
+    }
+
+    return 0;
+}
