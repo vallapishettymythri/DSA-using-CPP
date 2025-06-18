@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int arr[100][100]; // You can increase this size if needed
+
+    // Input of an array
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> arr[i][j];
+        }
+    }
+
+    int primary = 0, secondary = 0;
+
+    // Diagonal sums
+    for (int i = 0; i < n; i++) {
+        primary += arr[i][i]; //the a[0][0],a[1][1],a[2][2] is considered as diagonal
+        secondary += arr[i][n - 1 - i]; //a[0][2],a[1][1],a[2][0]
+    }
+
+    // Manual absolute difference
+    int diff;
+    if (primary > secondary) //if primary is greater than secondary then diff is primary-secondary
+        diff = primary - secondary;
+    else  //else secondary - primary
+        diff = secondary - primary;
+
+    cout << diff << endl;
+
+    return 0;
+}
